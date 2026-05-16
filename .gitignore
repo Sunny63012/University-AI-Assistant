@@ -1,0 +1,30 @@
+# Virtual Environment
+
+.venv/
+venv/
+
+# Environment Variables
+
+.env
+
+# Python Cache Files
+
+**pycache**/
+*.pyc
+
+# ChromaDB Database
+
+chroma_db2/
+
+# Streamlit Cache
+
+.streamlit/
+
+# Jupyter Notebook Checkpoints
+
+.ipynb_checkpoints/
+
+# OS Files
+
+.DS_Store
+Thumbs.db
