@@ -77,7 +77,7 @@ def load_chroma():
 
     #BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
-    CHROMA_PATH =r"C:\Users\komma\Desktop\LangChain\1-LangChain\DATABASE\chroma_db2"
+   CHROMA_PATH ="./chroma_db2"
     
 
     #st.write("Chroma Path:", CHROMA_PATH)
@@ -110,7 +110,7 @@ collections_map = st.session_state.collections_map
 @st.cache_resource
 def load_llm():
     return  ChatGroq(
-    groq_api_key=os.getenv("GROQ_API_KEY"),
+    groq_api_key=st.secrets["GROQ_API_KEY"],
     model_name="llama-3.3-70b-versatile"
 )
 
