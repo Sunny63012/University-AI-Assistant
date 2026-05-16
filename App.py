@@ -1,7 +1,3 @@
-__import__("pysqlite3")
-import sys
-
-sys.modules["sqlite3"] = sys.modules.pop("pysqlite3")
 from langchain_groq import ChatGroq
 import streamlit as st
 import pandas as pd
@@ -12,7 +8,6 @@ from sentence_transformers import SentenceTransformer
 
 from langchain.memory import ConversationBufferMemory
 from langchain.chains import LLMChain
-from langchain_community.llms import Ollama
 from langchain_core.prompts import ChatPromptTemplate
 
 
@@ -77,7 +72,7 @@ def load_chroma():
 
     #BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
-   CHROMA_PATH ="./chroma_db2"
+    CHROMA_PATH ="./chroma_db2"
     
 
     #st.write("Chroma Path:", CHROMA_PATH)
