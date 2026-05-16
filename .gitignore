@@ -23,6 +23,8 @@ chroma_db2/
 # Jupyter Notebook Checkpoints
 
 .ipynb_checkpoints/
+.streamlit/secrets.toml
+
 
 # OS Files
 
