@@ -110,7 +110,7 @@ collections_map = st.session_state.collections_map
 @st.cache_resource
 def load_llm():
     return  ChatGroq(
-    groq_api_key="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",
+    groq_api_key=os.getenv("GROQ_API_KEY"),
     model_name="llama-3.3-70b-versatile"
 )
 
