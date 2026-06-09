@@ -469,7 +469,7 @@ if query:
             # SHOW RETRIEVED DOCUMENTS
             # =========================================
 
-            with st.expander("📄 Retrieved Documents"):
+            with st.expander(" Retrieved Documents"):
 
                 for i, doc in enumerate(all_documents):
 
